@@ -1,0 +1,77 @@
+div {
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+div:first-child {
+    background-image: url("/CASE-05/assets/img/slide1.jpeg");
+}
+
+div:nth-child(2) {
+    background-image: url("/CASE-05/assets/img/slide2.jpeg");
+}
+
+div:nth-child(3) {
+    background-image: url("/CASE-05/assets/img/slide3.jpeg");
+}
+
+div:nth-child(4) {
+    background-image: url("/CASE-05/assets/img/slide4.jpeg");
+}
+
+section {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    animation: my-anime 5s ease-in-out alternate infinite;
+
+}
+
+main {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    border: 5px solid red;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+@keyframes my-anime {
+    0%,20% {
+        margin-left: 0;
+    }
+    25%,45% {
+        margin-left: -50vw;
+    }
+    50%,70% {
+        margin-left: -100vw;
+    }
+    75%,100% {
+        margin-left: -150vw;
+    }
+
+    /*0% {*/
+    /*    margin-left: 0;*/
+    /*}*/
+    /*25% {*/
+    /*    margin-left: -50vw;*/
+    /*}*/
+    /*50% {*/
+    /*    margin-left: -100vw;*/
+    /*}*/
+    /*75% {*/
+    /*    margin-left: -150vw;*/
+    /*}*/
+    /*100% {*/
+    /*    margin-left: -150vw;*/
+    /*}*/
+
+}
